@@ -5,11 +5,11 @@
     <title> coffeeWeek </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="coffeeWeek/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- 匯入bootstrap -->
-    <script src="coffeeWeek/jquery-3.1.1.min.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
     <!-- 匯入jQuery -->
-    <script src="coffeeWeek/js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
     <!-- 匯入bootstrap javascript -->
 </head>
 
@@ -26,7 +26,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a data-toggle="tab" href="#home">Home</a></li>
+                    <li><a data-toggle="tab" href="#all">SEE All</a></li>
                     <li><a data-toggle="tab" href="#monday">Monday</a></li>
                     <li><a data-toggle="tab" href="#tuesday">Tuesday</a></li>
                     <li><a data-toggle="tab" href="#wednesday">Wednesday</a></li>
@@ -35,344 +35,87 @@
                     <li><a data-toggle="tab" href="#saturday">Saturday</a></li>
                     <li><a data-toggle="tab" href="#sunday">Sunday</a></li>
                     <li><a data-toggle="tab" href="#nightcat">深夜咖撐</a></li>
-                </ul>
+                    <li><a data-toggle="tab" href="#earlybird">早起蟲兒被鳥吃</a></li>
             </div>
         </div>
     </nav>
     <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
+        <div id="all" class="tab-pane fade in active">
             </br>
             </br>
             </br>
             <!-- 避開固定導覽列用的 -->
+            <h2><a href="chart.html"> 檢視圖表</a></h2>
             <h3>咖啡遊牧族</h3>
             <p>一週每天開的咖啡店家數。</p>
             <img src="weekChart.png" height="80%" />
         </div>
         <!-- 星期一 -->
         <div id="monday" class="tab-pane fade">
-            </br>
-            </br>
-            </br>
-            <h3 id="top_1">週一喝一點</h3>
-            <p>一天各時段的開店數。</p>
             <div>
-                <ul class="nav nav-tabs">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">快速查看各時段 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#beforenine_1">百靈鳥清晨 5:00~9:00</a></li>
-                            <li><a href="#ninetofive_1">上班族時段 9:00~17:00</a></li>
-                            <li><a href="#nighttime_1">晚上時段 17:00~24:00</a></li>
-                            <li><a href="#nightcat_1"> 深夜貓子 24:00~5:00</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                </br>
+                </br>
+                </br>
+                <h3><a href="https://public.tableau.com/views/_9194/sheet0?:embed=y&:display_count=yes"> 週一喝咖啡</a></h3>
                 <img src="week/monday.png" height="80%" />
+                <img src="mon.png" height="80%" />
                 </br>
             </div>
-            <div>
-                <h4 id="beforenine_1"> 百靈鳥清晨 </h4>
-                <img src="week/mon_beforeNine.png" height="100%" />
-            </div>
-            <a href="#top_1">back to top</a>
-            <div>
-                <h4 id="ninetofive_1" color="red"> 上班族時段 </h4>
-                <img src="week/mon_commute_1.png" height="100%" />
-                <img src="week/mon_commute_2.png" height="100%" />
-                <img src="week/mon_commute_3.png" height="100%" />
-                <img src="week/mon_commute_4.png" height="100%" />
-                <img src="week/mon_commute_5.png" height="100%" />
-                <img src="week/mon_commute_6.png" height="40%"/>
-            </div>
-            <a href="#top_1">back to top</a>
-            <div>
-                <h4 id="nighttime_1"> 晚上時段 </h4>
-                <img src="week/mon_night_1.png" height="100%" />
-                <img src="week/mon_night_2.png" height="100%" />
-                <img src="week/mon_night_3.png" height="100%" />
-                <img src="week/mon_night_4.png" height="100%" />
-                <img src="week/mon_night_5.png" height="100%" />
-                <img src="week/mon_night_6.png" height="30%"/>
-            </div>
-            <a href="#top_1">back to top</a>
-            <div>
-                <h4 id="nightcat_1"> 深夜貓子 </h4>
-                <img src="week/mon_midnight.png" height="20%" />
-            </div>
-            <a href="#top_1">back to top</a>
         </div>
         <!-- 星期二 -->
         <div id="tuesday" class="tab-pane fade">
             </br>
             </br>
             </br>
-            <h3 id="top_2">週二喝更多</h3>
-            <p>一天各時段的開店數，還有詳細的數據呦。</p>
-            <div>
-                <ul class="nav nav-tabs">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">快速查看各時段 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#beforenine_2">百靈鳥清晨 5:00~9:00</a></li>
-                            <li><a href="#ninetofive_2">上班族時段 9:00~17:00</a></li>
-                            <li><a href="#nighttime_2">晚上時段 17:00~24:00</a></li>
-                            <li><a href="#nightcat_2"> 深夜貓子 24:00~5:00</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <img src="week/tuesday.png" height="80%" />
-                </br>
-            </div>
-            <div>
-                <h4 id="beforenine_2"> 百靈鳥清晨 </h4>
-                <img src="week/tues_beforeNine.png" height="100%" />
-            </div>
-            <a href="#top_2">back to top</a>
-            <div>
-                <h4 id="ninetofive_2" color="red"> 上班族時段 </h4>
-                <img src="week/tues_commute_1.png" height="100%" />
-                <img src="week/tues_commute_2.png" height="100%" />
-                <img src="week/tues_commute_3.png" height="100%" />
-                <img src="week/tues_commute_4.png" height="100%" />
-                <img src="week/tues_commute_5.png" height="100%" />
-                <img src="week/tues_commute_6.png" height="40%" />
-            </div>
-            <a href="#top_2">back to top</a>
-            <div>
-                <h4 id="nighttime_2"> 晚上時段 </h4>
-                <img src="week/tues_night_1.png" height="100%" />
-                <img src="week/tues_night_2.png" height="100%" />
-                <img src="week/tues_night_3.png" height="100%" />
-                <img src="week/tues_night_4.png" height="100%" />
-                <img src="week/tues_night_5.png" height="100%" />
-                <img src="week/tues_night_6.png" height="30%" />
-            </div>
-            <a href="#top_2">back to top</a>
-            <div>
-                <h4 id="nightcat_2"> 深夜貓子 </h4>
-                <img src="week/tues_midnight.png" height="20%" />
-            </div>
-            <a href="#top_2">back to top</a>
+            <h3><a href="https://public.tableau.com/views/_9196/sheet2?:embed=y&:loadOrderID=1&:display_count=yes"> 週二喝咖啡</a></h3>
+            <img src="week/tuesday.png" height="80%" />
+            <img src="tue.png" height="80%" />
         </div>
         <!-- 星期三 -->
         <div id="wednesday" class="tab-pane fade">
             </br>
             </br>
             </br>
-            <h3 id="top_3">週三喝三點</h3>
-            <p>一天各時段的開店數。</p>
-            <div>
-                <ul class="nav nav-tabs">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">快速查看各時段 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#beforenine_3">百靈鳥清晨 5:00~9:00</a></li>
-                            <li><a href="#ninetofive_3">上班族時段 9:00~17:00</a></li>
-                            <li><a href="#nighttime_3">晚上時段 17:00~24:00</a></li>
-                            <li><a href="#nightcat_3"> 深夜貓子 24:00~5:00</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <img src="week/wednesday.png" height="80%" />
-                </br>
-            </div>
-            <div>
-                <h4 id="beforenine_3"> 百靈鳥清晨 </h4>
-                <img src="week/wed_beforeNine.png" height="100%" />
-            </div>
-            <a href="#top_3">back to top</a>
-            <div>
-                <h4 id="ninetofive_3" color="red"> 上班族時段 </h4>
-                <img src="week/wed_commute_1.png" height=100% />
-                <img src="week/wed_commute_2.png" height=100% />
-                <img src="week/wed_commute_3.png" height=100% />
-                <img src="week/wed_commute_4.png" height=100% />
-                <img src="week/wed_commute_5.png" height=100% />
-                <img src="week/wed_commute_6.png" height=100% />
-                <img src="week/wed_commute_7.png" height=10% />
-            </div>
-            <a href="#top_3">back to top</a>
-            <div>
-                <h4 id="nighttime_3"> 晚上時段 </h4>
-                <img src="week/wed_night_1.png" height=100% />
-                <img src="week/wed_night_2.png" height=100% />
-                <img src="week/wed_night_3.png" height=100% />
-                <img src="week/wed_night_4.png" height=100% />
-                <img src="week/wed_night_5.png" height=100% />
-                <img src="week/wed_night_6.png" height=100% />
-            </div>
-            <a href="#top_3">back to top</a>
-            <div>
-                <h4 id="nightcat_3"> 深夜貓子 </h4>
-                <img src="week/wed_midnight.png" height=20% />
-            </div>
-            <a href="#top_3">back to top</a>
+            <h3><a href="https://public.tableau.com/views/_9197/sheet2?:embed=y&:loadOrderID=2&:display_count=yes"> 週三喝咖啡</a></h3>
+            <img src="week/wednesday.png" height="80%" />
+            <img src="wed.png" height="80%" />
         </div>
         <!-- 星期四 -->
         <div id="thursday" class="tab-pane fade">
             </br>
             </br>
             </br>
-            <h3 id="top_4">週四大喝特喝</h3>
-            <p>一天各時段的開店數。</p>
-            <div>
-                <ul class="nav nav-tabs">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">快速查看各時段 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#beforenine_4">百靈鳥清晨 5:00~9:00</a></li>
-                            <li><a href="#ninetofive_4">上班族時段 9:00~17:00</a></li>
-                            <li><a href="#nighttime_4">晚上時段 17:00~24:00</a></li>
-                            <li><a href="#nightcat_4"> 深夜貓子 24:00~5:00</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <img src="week/thursday.png" height="80%" />
-                </br>
-            </div>
-            <div>
-                <h4 id="beforenine_4"> 百靈鳥清晨 </h4>
-                <img src="week/thurs_beforeNine.png" height="100%" />
-            </div>
-            <a href="#top_4">back to top</a>
-            <div>
-                <h4 id="ninetofive_4" color="red"> 上班族時段 </h4>
-                <img src="week/thurs_commute_1.png" height=100% />
-                <img src="week/thurs_commute_2.png" height=100% />
-                <img src="week/thurs_commute_3.png" height=100% />
-                <img src="week/thurs_commute_4.png" height=100% />
-                <img src="week/thurs_commute_5.png" height=100% />
-                <img src="week/thurs_commute_6.png" height=100% />
-            </div>
-            <a href="#top_4">back to top</a>
-            <div>
-                <h4 id="nighttime_4"> 晚上時段 </h4>
-                <img src="week/thurs_night_1.png" height=100% />
-                <img src="week/thurs_night_2.png" height=100% />
-                <img src="week/thurs_night_3.png" height=100% />
-                <img src="week/thurs_night_4.png" height=100% />
-                <img src="week/thurs_night_5.png" height=100% />
-                <img src="week/thurs_night_6.png" height=100% />
-            </div>
-            <a href="#top_4">back to top</a>
-            <div>
-                <h4 id="nightcat_4"> 深夜貓子 </h4>
-                <img src="week/thurs_midnight.png" height=20% />
-            </div>
-            <a href="#top_4">back to top</a>
+            <h3><a href="https://public.tableau.com/views/_9198/sheet3?:embed=y&:loadOrderID=3&:display_count=yes"> 週四喝咖啡</a></h3>
+            <img src="week/thursday.png" height="80%" />
+            <img src="thu.png" height="80%" />
         </div>
         <!-- 星期五 -->
         <div id="friday" class="tab-pane fade">
             </br>
             </br>
             </br>
-            <h3 id="top_5">週五又要開喝</h3>
-            <p>一天各時段的開店數。</p>
-            <div>
-                <ul class="nav nav-tabs">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">快速查看各時段 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#beforenine_5">百靈鳥清晨 5:00~9:00</a></li>
-                            <li><a href="#ninetofive_5">上班族時段 9:00~17:00</a></li>
-                            <li><a href="#nighttime_5">晚上時段 17:00~24:00</a></li>
-                            <li><a href="#nightcat_5"> 深夜貓子 24:00~5:00</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <img src="week/friday.png" height="80%" />
-                </br>
-            </div>
-            <div>
-                <h4 id="beforenine_5"> 百靈鳥清晨 </h4>
-                <img src="week/fri_beforeNine.png" height="100%" />
-            </div>
-            <a href="#top_5">back to top</a>
-            <div>
-                <h4 id="ninetofive_5"> 上班族時段 </h4>
-                <img src="week/fri_commute_1.png" height=100% />
-                <img src="week/fri_commute_2.png" height=100% />
-                <img src="week/fri_commute_3.png" height=100% />
-                <img src="week/fri_commute_4.png" height=100% />
-                <img src="week/fri_commute_5.png" height=100% />
-                <img src="week/fri_commute_6.png" height=100% />
-                <img src="week/fri_commute_7.png" height=10% />
-            </div>
-            <a href="#top_5">back to top</a>
-            <div>
-                <h4 id="nighttime_5"> 晚上時段 </h4>
-                <img src="week/fri_night_1.png" height=100% />
-                <img src="week/fri_night_2.png" height=100% />
-                <img src="week/fri_night_3.png" height=100% />
-                <img src="week/fri_night_4.png" height=100% />
-                <img src="week/fri_night_5.png" height=100% />
-                <img src="week/fri_night_6.png" height=100% />
-            </div>
-            <a href="#top_5">back to top</a>
-            <div>
-                <h4 id="nightcat_5"> 深夜貓子 </h4>
-                <img src="week/fri_midnight.png" height=30% />
-            </div>
-            <a href="#top_5">back to top</a>
+            <h3><a href="https://public.tableau.com/views/_9199/sheet4?:embed=y&:display_count=yes"> 週五喝咖啡</a></h3>
+            <img src="week/friday.png" height="80%" />
+            <img src="fri.png" height="80%" />
         </div>
         <!-- 星期六 -->
         <div id="saturday" class="tab-pane fade">
             </br>
             </br>
             </br>
-            <h3 id="top_6">週六還是亂喝</h3>
-            <p>一天各時段的開店數。</p>
-            <div>
-                <ul class="nav nav-tabs">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">快速查看各時段 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#beforenine_6">百靈鳥清晨 5:00~9:00</a></li>
-                            <li><a href="#ninetofive_6">上班族時段 9:00~17:00</a></li>
-                            <li><a href="#nighttime_6">晚上時段 17:00~24:00</a></li>
-                            <li><a href="#nightcat_6"> 深夜貓子 24:00~5:00</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <img src="week/saturday.png" height="80%" />
-                </br>
-            </div>
-            <div>
-                <h4 id="beforenine_6"> 百靈鳥清晨 </h4>
-                <img src="week/sat_beforeNine.png" height="100%" />
-            </div>
-            <a href="#top_6">back to top</a>
-            <div>
-                <h4 id="ninetofive_6"> 上班族時段 </h4>
-                <img src="week/sat_commute_1.png" height=100% />
-                <img src="week/sat_commute_2.png" height=100% />
-                <img src="week/sat_commute_3.png" height=100% />
-                <img src="week/sat_commute_4.png" height=100% />
-                <img src="week/sat_commute_5.png" height=100% />
-                <img src="week/sat_commute_6.png" height=100% />
-                <img src="week/sat_commute_7.png" height=100% />
-            </div>
-            <a href="#top_6">back to top</a>
-            <div>
-                <h4 id="nighttime_6"> 晚上時段 </h4>
-                <img src="week/sat_night_1.png" height=100% />
-                <img src="week/sat_night_2.png" height=100% />
-                <img src="week/sat_night_3.png" height=100% />
-                <img src="week/sat_night_4.png" height=100% />
-                <img src="week/sat_night_5.png" height=100% />
-                <img src="week/sat_night_6.png" height=100% />
-                <img src="week/sat_night_7.png" height=60% />
-            </div>
-            <a href="#top_6">back to top</a>
-            <div>
-                <h4 id="nightcat_6"> 深夜貓子 </h4>
-                <img src="week/sat_midnight.png" height=20% />
-            </div>
-            <a href="#top_6">back to top</a>
+            <h3><a href="https://public.tableau.com/views/_9201/sheet5?:embed=y&:display_count=yes"> 週六喝咖啡</a></h3>
+            <img src="week/saturday.png" height="80%" />
+            <img src="sat.png" height="80%" />
         </div>
         <!-- 星期天 -->
         <div id="sunday" class="tab-pane fade">
             </br>
             </br>
             </br>
-            <h3 id="top_7">週日還是要喝</h3>
-            <p> 一天各時段的開店數。</p>
-            <div>
+            <h3><a href="https://public.tableau.com/views/_9202/sheet6?:embed=y&:display_count=yes"> 週日喝咖啡</a></h3>
+            <img src="week/sunday.png" height="80%" />
+            <img src="sun.png" height="80%" />
+            <!--         <div>
                 <ul class="nav nav-tabs">
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">快速查看各時段 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -394,33 +137,129 @@
             <div>
                 <h4 id="ninetofive_7"> 上班族時段 </h4>
                 <img src="week/sun_commute_1.png" height=100% />
-                <img src="week/sun_commute_2.png" height=100% />
-                <img src="week/sun_commute_3.png" height=100% />
-                <img src="week/sun_commute_4.png" height=100% />
-                <img src="week/sun_commute_5.png" height=100% />
-                <img src="week/sun_commute_6.png" height=100% />
-                <img src="week/sun_commute_7.png" height=100% />
-                <img src="week/sun_commute_8.png" height=40% />
             </div>
             <a href="#top_7">back to top</a>
             <div>
                 <h4 id="nighttime_7"> 晚上時段 </h4>
                 <img src="week/sun_night_1.png" height=100% />
-                <img src="week/sun_night_2.png" height=100% />
-                <img src="week/sun_night_3.png" height=100% />
-                <img src="week/sun_night_4.png" height=100% />
-                <img src="week/sun_night_5.png" height=100% />
-                <img src="week/sun_night_6.png" height=100% />
-                <img src="week/sun_night_7.png" height=100% />
-                <img src="week/sun_night_8.png" height=30% />
             </div>
             <a href="#top_7">back to top</a>
             <div>
                 <h4 id="nightcat_7"> 深夜貓子 </h4>
                 <img src="week/sun_midnight.png" height=25% />
             </div>
-            <a href="#top_7">back to top</a>
+            <a href="#top_7">back to top</a> -->
         </div>
+        <div id="nightcat" class="tab-pane fade">
+            </br>
+            </br>
+            </br>
+            <!-- 避開固定導覽列用的 -->
+            <h3>深夜咖撐：夜貓指數</h3>
+            <p>就是喜歡半夜到這些店晃蕩。</p>
+            <div class="panel panel-default">
+                <img src="week/nightcat.png" height="80%" />
+                <!-- Default panel contents -->
+                <div class="panel-heading">夜貓子都去哪些店？</div>
+                <!-- Table -->
+                <table class="table table-striped rwd-table" ">
+                        <tr>
+                            <th>店名</th>
+                            <th>地址</th>
+                            <th>營業時間</th>
+                            <th>作者點評</th>
+                        </tr>
+                         <tr>
+                            <td>杜鵑窩 CUCKOO's NEST</td>
+                            <td>台北市中山區北安路458巷41弄52號</td>
+                            <td>13:30-00:30</td>
+                            <td>這時間點也能算夜貓店？</td>
+                        </tr>                    
+                        <tr>
+                            <td>未央咖啡店</td>
+                            <td>台北市大安區四維路208巷10號</td>
+                            <td>12:30~01:00</td>
+                            <td>沒去過，但名字頗吸引人的</td>
+                        </tr>
+                                                               
+                        <tr>
+                            <td> 穆勒咖啡館 Cafe Muller</td>
+                            <td>台北市中山區北安路595巷33號</td>
+                            <td>週日~四 11:30-23:00 週五六 11:30-01:00</td>
+                            <td>蠻多藝文活動的樣子</td>
+                        </tr>                        
+                        <tr>
+                            <td> COSTUMICE CAFÉ</td>
+                            <td>台北市大安區忠孝東路四段223巷71弄6號</td>
+                            <td>週一~週四、日 12:00-24:00；週五六 12:00-01:00</td>
+                            <td>沒去過，但開不夠晚</td>
+                        </tr>           
+                                                <tr>
+                            <td>紅雪啡啡</td>
+                            <td>台北市松山區南京東路五段167號 </td>
+                            <td>09:00-01:00</td>
+                            <td>沒去過，不過我覺得沒到兩點都不算半夜</td>
+                        </tr>            
+                        <tr>
+                            <td>Modern Mode Café</td>
+                            <td>台北市大同區迪化街一段278號</td>
+                            <td>週一~週四、日 11:30-20:30 週五、六 11:30-02:01 週二公休</td>
+                            <td>沒去過</td>
+                        </tr>                        
+                        <tr>
+                            <td> Remember Me_記得我．Café</td>
+                            <td>台北市松山區南京東路四段133巷4弄16號</td>
+                            <td>週二~六 12:00-02:00 週日~一 12:00-22:30</td>
+                            <td>朋友駐唱的店，東西很好吃，沒待到半夜過</td>
+                        </tr>
+                       <tr>
+                            <td>巴黎米咖啡 Cafe 8mm</td>
+                            <td>台北市大安區新生南路三段60巷1號 </td>
+                            <td>週一到週五 13:30-01:30 週六日 12:00-01:30 週三公休</td>
+                            <td>巧克力極好喝的店，氣氛也很讚，但沒待到半夜過</td>
+                        </tr>     
+                        <tr>
+                            <td>左先生咖啡Dousun Cafe'</td>
+                            <td>台北市松山區延壽街139號</td>
+                            <td>14:30-03:00 週二三公休</td>
+                            <td>沒去過，但很想去去看</td>
+                        </tr>
+                         <tr>
+                            <td> Sugar Man Cafe</td>
+                            <td>台北市大安區和平東路一段87-1號</td>
+                            <td>14:00-04:00</td>
+                            <td>愛店之一，飲料好喝、老搖滾也很棒</td>
+                        </tr>
+                         <tr>
+                            <td> 暗角咖啡</td>
+                            <td>台北市中正區廈門街1號</td>
+                            <td>14:00-04:00</td>
+                            <td>搬家前常去，搬家後氣氛變了，不過是這時間點少數還開的店。</td>
+                        </tr>      
+                        <tr>
+                            <td> 4am cafe</td>
+                            <td>台北市大安區光復南路308巷38號 </td>
+                            <td>14:00-04:00</td>
+                            <td>傳說中的咖啡店，一直沒去</td>
+                        </tr>
+                                    <tr>
+                            <td>生活在他方elsewhere cafe</td>
+                            <td>台北市中正區羅斯福路一段119巷3號1樓</td>
+                            <td>03:30-22:00 週一公休</td>
+                            <td>之前辦插畫展很棒，不知道這麼早開，很酷。</td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+        <div id="earlybird" class="tab-pane fade ">
+                </br>
+                </br>
+                </br>
+            <!-- 避開固定導覽列用的 -->
+            <h3> 早起被鳥吃？</h3>
+            <p>晨型人的最愛</p>
+                <img src="week/earlybird.png " height="80% " />
+            </div>
     </div>
 </body>
 
