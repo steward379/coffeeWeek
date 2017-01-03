@@ -1,5 +1,5 @@
 </!DOCTYPE html>
-<html>
+<html lang="zh-hant-tw">
 
 <head>
     <title> coffeeWeek </title>
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="nav navbar-inverse navbar-fixed-top">
+    <nav class="nav navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -44,13 +44,12 @@
             </div>
         </div>
     </nav>
-    <div class="tab-content">
+    <div class="container tab-content">
+        <!-- 主頁面一 -->
         <div id="all" class="tab-pane fade in active">
-            </br>
-            </br>
-            </br>
+
             <!-- 避開固定導覽列用的 -->
-            <h2><a href="chart.html"> 檢視圖表</a></h2>
+            <h2><a href="chart.html"><button type="button" class="btn btn-success btm-lg btn-block">檢視圖表</button></a></h2>
             <h3>咖啡遊牧族</h3>
             <p>一週每天開的咖啡店家數。</p>
             <img src="weekChart.png" height="80%" />
@@ -59,22 +58,20 @@
         </div>
         <!-- 星期一 -->
         <div id="monday" class="tab-pane fade">
-            <div>
                 </br>
                 </br>
                 </br>
-                <h3><a href="https://public.tableau.com/views/_9194/sheet0?:embed=y&:display_count=yes"> 週一喝咖啡</a></h3>
+                <h3><button type="button" class="btn btn-default btn-lg"><a href="https://public.tableau.com/views/_9194/sheet0?:embed=y&:display_count=yes"> 週一喝咖啡</a></button></h3>
                 <img src="week/monday.png" height="80%" />
                 <img src="mon.png" height="80%" />
                 </br>
-            </div>
         </div>
         <!-- 星期二 -->
         <div id="tuesday" class="tab-pane fade">
             </br>
             </br>
             </br>
-            <h3><a href="https://public.tableau.com/views/_9196/sheet2?:embed=y&:loadOrderID=1&:display_count=yes"> 週二喝咖啡</a></h3>
+            <h3><button type="button" class="btn btn-default btn-lg"><a href="https://public.tableau.com/views/_9196/sheet2?:embed=y&:loadOrderID=1&:display_count=yes"> 週二喝咖啡</a></button></h3>
             <img src="week/tuesday.png" height="80%" />
             <img src="tue.png" height="80%" />
         </div>
@@ -83,7 +80,7 @@
             </br>
             </br>
             </br>
-            <h3><a href="https://public.tableau.com/views/_9197/sheet2?:embed=y&:loadOrderID=2&:display_count=yes"> 週三喝咖啡</a></h3>
+            <h3><button type="button" class="btn btn-default btn-lg"><a href="https://public.tableau.com/views/_9197/sheet2?:embed=y&:loadOrderID=2&:display_count=yes"> 週三喝咖啡</a></button></h3>
             <img src="week/wednesday.png" height="80%" />
             <img src="wed.png" height="80%" />
         </div>
@@ -92,7 +89,7 @@
             </br>
             </br>
             </br>
-            <h3><a href="https://public.tableau.com/views/_9198/sheet3?:embed=y&:loadOrderID=3&:display_count=yes"> 週四喝咖啡</a></h3>
+            <h3><button type="button" class="btn btn-default btn-lg"><a href="https://public.tableau.com/views/_9198/sheet3?:embed=y&:loadOrderID=3&:display_count=yes"> 週四喝咖啡</a></button></h3>
             <img src="week/thursday.png" height="80%" />
             <img src="thu.png" height="80%" />
         </div>
@@ -101,7 +98,7 @@
             </br>
             </br>
             </br>
-            <h3><a href="https://public.tableau.com/views/_9199/sheet4?:embed=y&:display_count=yes"> 週五喝咖啡</a></h3>
+            <h3><button type="button" class="btn btn-default btn-lg"><a href="https://public.tableau.com/views/_9199/sheet4?:embed=y&:display_count=yes"> 週五喝咖啡</a></button></h3>
             <img src="week/friday.png" height="80%" />
             <img src="fri.png" height="80%" />
         </div>
@@ -110,7 +107,7 @@
             </br>
             </br>
             </br>
-            <h3><a href="https://public.tableau.com/views/_9201/sheet5?:embed=y&:display_count=yes"> 週六喝咖啡</a></h3>
+            <h3><button type="button" class="btn btn-default btn-lg"><a href="https://public.tableau.com/views/_9201/sheet5?:embed=y&:display_count=yes"> 週六喝咖啡</a></button></h3>
             <img src="week/saturday.png" height="80%" />
             <img src="sat.png" height="80%" />
         </div>
@@ -119,7 +116,7 @@
             </br>
             </br>
             </br>
-            <h3><a href="https://public.tableau.com/views/_9202/sheet6?:embed=y&:display_count=yes"> 週日喝咖啡</a></h3>
+            <h3><button type="button" class="btn btn-default btn-lg"><a href="https://public.tableau.com/views/_9202/sheet6?:embed=y&:display_count=yes"> 週日喝咖啡</a></button></h3>
             <img src="week/sunday.png" height="80%" />
             <img src="sun.png" height="80%" />
             <!--         <div>
@@ -133,30 +130,9 @@
                         </ul>
                     </li>
                 </ul>
-                <img src="week/sunday.png" height="80%" />
-                </br>
-            </div>
-            <div>
-                <h4 id="beforenine_7"> 百靈鳥清晨 </h4>
-                <img src="week/sun_beforeNine.png" height="100%" />
-            </div>
-            <a href="#top_7">back to top</a>
-            <div>
-                <h4 id="ninetofive_7"> 上班族時段 </h4>
-                <img src="week/sun_commute_1.png" height=100% />
-            </div>
-            <a href="#top_7">back to top</a>
-            <div>
-                <h4 id="nighttime_7"> 晚上時段 </h4>
-                <img src="week/sun_night_1.png" height=100% />
-            </div>
-            <a href="#top_7">back to top</a>
-            <div>
-                <h4 id="nightcat_7"> 深夜貓子 </h4>
-                <img src="week/sun_midnight.png" height=25% />
-            </div>
-            <a href="#top_7">back to top</a> -->
+            </div>-->
         </div>
+        <!-- 夜貓族 -->
         <div id="nightcat" class="tab-pane fade">
             </br>
             </br>
@@ -166,9 +142,7 @@
             <p>就是喜歡半夜到這些店晃蕩。</p>
             <div class="panel panel-default">
                 <img src="week/nightcat.png" height="80%" />
-                <!-- Default panel contents -->
                 <div class="panel-heading">夜貓子都去哪些店？</div>
-                <!-- Table -->
                 <table class="table table-striped rwd-table" ">
                         <tr>
                             <th>店名</th>
@@ -258,6 +232,7 @@
                 </table>
             </div>
         </div>
+        <!-- 早鳥計畫 -->
         <div id="earlybird" class="tab-pane fade">
                 </br>
                 </br>
@@ -266,7 +241,7 @@
             <h3> 早起被鳥吃？</h3>
             <p>晨型人的最愛</p>
                 <img src="week/earlybird.png " height="80% " />
-            </div>
+        </div>
     </div>
 </body>
 
